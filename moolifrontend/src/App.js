@@ -22,21 +22,22 @@ function App() {
 
   return (
     <div>
-      <h1> Implementing Jim Kason Component in React</h1>
-      {/* <SearchInput collectdata={searchInput}/> */}
-      {/* <Row title={keyword}/> */}
+      <h1>Mooli <span>&#9978;</span></h1>
+      <h2> Implementing Search Feature</h2>
+      <SearchInput collectdata={searchInput}/>
+      <Row title={keyword}/>
 
-      <Kason gender="male" complexion="black" height="tall" weight="slim" />
-      <Kason gender="female" complexion="white" height="short"/>
-      <Kason height="average" weight="fat"/>
-      <Kason complexion="albino"/>
+      {/* <Kason gender="male" complexion="black" height="tall" weight="slim" /> */}
+      {/* <Kason gender="female" complexion="white" height="short"/> */}
+      {/* <Kason height="average" weight="fat"/> */}
+      {/* <Kason complexion="albino"/> */}
       
       {/* <a href="https://Google.com" alt="gogle">google</a> */}
       {/* <a href="https://microsoft.com">microsoft </a> */}
       {/* <a href="https://apple.com">apple </a> */}
 
-      <Counter start={6}/>    
-      <Counter start={11}/>    
+      {/* <Counter start={6}/>     */}
+      {/* <Counter start={11}/>     */}
       {/* <Link label="Jim Kason" bg="red" /> */}
       {/* <Link label="DivineFavour" bg="blue"/> */}
       {/* <Link label="Ikenna Wilson" bg="pink" /> */}

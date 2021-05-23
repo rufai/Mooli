@@ -1,0 +1,10 @@
+#search_result {
+    padding: 20px;
+}
+#search_result_number {
+    color: red;
+}
+
+#search_keyword {
+    color: blue;
+}
