@@ -22,14 +22,14 @@ function App() {
 
   return (
     <div>
-      <h1> Implementing Counter in React</h1>
+      <h1> Implementing Jim Kason Component in React</h1>
       {/* <SearchInput collectdata={searchInput}/> */}
       {/* <Row title={keyword}/> */}
 
-      {/* <Kason gender="male" complexion="black" height="tall" weight="slim" /> */}
-      {/* <Kason gender="female" complexion="white" height="short"/> */}
-      {/* <Kason height="average" weight="fat"/> */}
-      {/* <Kason complexion="albino"/> */}
+      <Kason gender="male" complexion="black" height="tall" weight="slim" />
+      <Kason gender="female" complexion="white" height="short"/>
+      <Kason height="average" weight="fat"/>
+      <Kason complexion="albino"/>
       
       {/* <a href="https://Google.com" alt="gogle">google</a> */}
       {/* <a href="https://microsoft.com">microsoft </a> */}
