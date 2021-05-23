@@ -1,11 +1,6 @@
 
 import './App.css';
-import { Card, addition } from './components/card'
-import MovieList from './components/movie/list'
 import Row from "./components/row/index";
-import Link from './components/link'
-import Counter from './components/counter'
-import Kason from './components/jim'
 import SearchInput from './components/search'
 
 import {useState} from 'react'

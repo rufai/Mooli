@@ -6,7 +6,7 @@ function Kason(props){
     return(
         <div>
             <h2>Jim Kason</h2>
-            <img src={jim} />
+            <img src={jim} alt={props.gender}/>
             <table>
                 <thead>
                     <tr>
