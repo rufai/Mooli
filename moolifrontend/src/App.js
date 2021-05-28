@@ -4,7 +4,7 @@ import Row from "./components/row/index";
 import SearchInput from './components/search'
 import Kason from './components/jim'
 import Counter from './components/counter'
-import { Card, Addition } from './components/card'
+import { Card,  } from './components/card'
 import { 
   BrowserRouter as Router, 
   Switch, 
@@ -30,7 +30,7 @@ function App() {
         <nav>
           <ol>
             <li> 
-              <Link to="/">Home Page</Link>
+              <Link to="/">Home</Link>
             </li>
             <li> 
               <Link to="/jim">Jim Page</Link>
@@ -55,7 +55,7 @@ function App() {
       </div>
       <Switch>
        <Route path="/jim">
-         <Kason gender={"male"} complexion={"dark"} height={170} weight={100}/>
+         <Kason gender={"male"} complexion={"dark"} height={"170"} weight={"100"}/>
        </Route>
         <Route path="/counter">
           <Counter start={10}/>

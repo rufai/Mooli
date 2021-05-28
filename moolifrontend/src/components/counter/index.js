@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 function Counter(props) {
-    
+
     // let casper = "boy"
     // function changeCasper( phrase ){
     //     casper = phrase
@@ -47,7 +47,10 @@ function Counter(props) {
     // unmounting
         // componentWillUnmount()  ===> after component has left V-DOM
 
-   
+    useEffect(() => {
+        document.title = counter
+        window.localStorage.setItem("counter", counter)
+    }, [counter, props.start])
 
     return(
         <div>
