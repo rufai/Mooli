@@ -1,5 +1,6 @@
 import jim from './../../data/img/jim.jpg'
 
+import PropTypes from 'prop-types'
 
 function Kason(props){
     console.log( {props} )
@@ -41,5 +42,13 @@ function Kason(props){
         </div>        
     )
 }
+
+Kason.propTypes = {
+    gender: PropTypes.string.isRequired,
+    complexion: PropTypes.string.isRequired,
+    height: PropTypes.string,
+    weight: PropTypes.string
+}
+
 
 export default Kason;

@@ -2,6 +2,15 @@
 import './App.css';
 import Row from "./components/row/index";
 import SearchInput from './components/search'
+import Kason from './components/jim'
+import Counter from './components/counter'
+import { Card, Addition } from './components/card'
+import { 
+  BrowserRouter as Router, 
+  Switch, 
+  Route, 
+  Link 
+} from "react-router-dom";
 
 import {useState} from 'react'
 
@@ -16,33 +25,50 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>Mooli <span>&#9978;</span></h1>
-      <h2> Implementing Search Feature</h2>
-      <SearchInput collectdata={searchInput}/>
-      <Row title={keyword}/>
-
-      {/* <Kason gender="male" complexion="black" height="tall" weight="slim" /> */}
-      {/* <Kason gender="female" complexion="white" height="short"/> */}
-      {/* <Kason height="average" weight="fat"/> */}
-      {/* <Kason complexion="albino"/> */}
-      
-      {/* <a href="https://Google.com" alt="gogle">google</a> */}
-      {/* <a href="https://microsoft.com">microsoft </a> */}
-      {/* <a href="https://apple.com">apple </a> */}
-
-      {/* <Counter start={6}/>     */}
-      {/* <Counter start={11}/>     */}
-      {/* <Link label="Jim Kason" bg="red" /> */}
-      {/* <Link label="DivineFavour" bg="blue"/> */}
-      {/* <Link label="Ikenna Wilson" bg="pink" /> */}
-      
-      {/* <a href="https://google.com" id="google_url" className="google" /> */}
-      {/* <a href="https://microsoft.com" id="microsoft_url" className="google" /> */}
-      {/* <Card /> */}
-      
-     
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ol>
+            <li> 
+              <Link to="/">Home Page</Link>
+            </li>
+            <li> 
+              <Link to="/jim">Jim Page</Link>
+            </li>
+            <li> 
+              <Link to="/tola">Tola Page</Link>
+            </li>
+            <li> 
+              <Link to="/Stanley">Stanley's Page</Link>
+            </li>
+            <li> 
+              <Link to="/counter">Counter</Link>
+            </li>
+            <li> 
+              <Link to="/mooli">Mooli</Link>
+            </li>
+            <li> 
+              <Link to="/card">Card</Link>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <Switch>
+       <Route path="/jim">
+         <Kason gender={"male"} complexion={"dark"} height={170} weight={100}/>
+       </Route>
+        <Route path="/counter">
+          <Counter start={10}/>
+        </Route>
+        <Route path="/card">
+          <Card />
+        </Route>
+        <Route path="/mooli">
+          <SearchInput collectdata={searchInput}/>
+          <Row title={keyword}/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
